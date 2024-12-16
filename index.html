@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        th, td{
+            border: 1px solid black;
+        }
+        tfoot{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <!--Table serve para englobar os dados na tabela, avisando que irá começar uma tabela-->
+    <table>
+        <!--Thead serve para rganizar as representações das colunas da tabela, a estrutura do cabeçalho-->
+        <thead>
+            <!--Table roll, representa uma linha na tabela-->
+            <tr>
+                <!--Representa cada coluna na tabela-->
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>BlackFriday</th>
+            </tr>            
+        </thead>
+        <!--Podesse usar (td colspan) para expandir umas das colunas ou (td rowspan) para expandir uma das linhas-->
+        <tbody>
+            <tr>
+            <td>Produto 1</td>
+            <td>2</td>
+            <td>5$</td>
+            <td rowspan="2">Sim</td>
+            </tr>
+
+            <tr>
+            <td>Produto 2</td>
+            <td>5</td>
+            <td>10$</td>
+            </tr>
+
+            <tr>
+            <td>Produto 3</td>
+            <td>3</td>
+            <td>15$</td>                <td>Não</td>
+            </tr>
+        </tbody>
+        
+        <!--Rodapé da tabela,-->
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>75</td>
+            </tr>
+
+        </tfoot>
+
+    </table>
+</body>
+</html>
